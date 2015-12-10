@@ -1,6 +1,6 @@
 
 # Path
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.dotfiles/zsh/plugins/oh-my-zsh
 export DOTZSHDIR=$HOME/.dotfiles/zsh
 
 if ! [ $EMACS ]; then
