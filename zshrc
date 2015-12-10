@@ -1,7 +1,9 @@
-
+#!usr/bin/env zsh
 # Path
 export ZSH=$HOME/.dotfiles/zsh/plugins/oh-my-zsh
 export DOTZSHDIR=$HOME/.dotfiles/zsh
+export GOPATH=$HOME/bin/go
+export PATH=$PATH:$HOME/bin:$GOPATH/bin
 
 if ! [ $EMACS ]; then
     ZSH_THEME="oshiroy"
