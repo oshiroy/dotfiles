@@ -6,13 +6,11 @@ export GOPATH=$HOME/bin/go
 export PATH=$PATH:$HOME/bin:$GOPATH/bin
 
 if ! [ $EMACS ]; then
-    ZSH_THEME="oshiroy"
+    ZSH_THEME="agnoster"
 else
     ZSH_THEME="gentoo"
 fi
-if [ -n "$DISPLAY" -a "$TERM" = "xterm" ]; then
-  export TERM=xterm-256color
-fi
+
 
 # tmux auto start
 #if [ -z $TMUX ]; then
@@ -41,18 +39,14 @@ fi
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-# User configuration
-
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# oh-my-zsh plugins
+plugins=(git)
+
 source $ZSH/oh-my-zsh.sh
+
 for plugin ($DOTZSHDIR/plugins/*) source $plugin
 for config_file ($DOTZSHDIR/*.zsh) source $config_file
 
