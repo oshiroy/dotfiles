@@ -37,3 +37,12 @@ function emp() {
 }
 zle -N emp
 
+
+# grep ward in file and open em by peco
+function grep-open () {
+    for file in `grep -riIn $1 * .|peco | awk '{ print $1 }'| sed  's/\:\(.*\)//g'`
+    do
+	em  $file
+    done
+}
+zle -N grep-open
