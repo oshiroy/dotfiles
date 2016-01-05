@@ -21,10 +21,10 @@ zle -N rosc
 
 #rosbp (rosbag play)
 function rosbp () {
-  for bag in `find ~/rosbags -type f ! -name '*.orig.bag'|peco`
-  do 
-     rosbag play $bag
-  done
+    for bag in `find ~/rosbags -type f ! -name '*.orig.bag'|peco`
+    do
+	rosbag play $bag $*
+    done
 }
 zle -N rosbp
 
