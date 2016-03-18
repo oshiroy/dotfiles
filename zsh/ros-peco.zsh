@@ -77,3 +77,11 @@ function eusdef() {
     for res in `find ~/ -type f -name "*.l" |xargs grep $1 |egrep 'defun|defclass|defmethod|defmacro'| peco`
 }
 zle -N eusdef
+
+
+# topic name percol select
+function percol-select-topic() {
+  BUFFER=$LBUFFER$(rostopic list | percol)
+  zle -R -c
+}
+zle -N percol-select-topic

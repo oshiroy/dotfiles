@@ -61,9 +61,10 @@ export SVN_SSH="ssh -l ${SSH_USER}"
 
 ## bind key
 bindkey '^r' peco-select-history
-
+bindkey '^[r' percol-select-topic
 
 # for checking zsh speed
 # if (which zprof > /dev/null) ;then
 #     zprof | less
 # fi
+
