@@ -2,7 +2,7 @@
 
 # kill function
 function pekill () {
-  for pid in `ps -ef | peco | awk '{ print $2 }'`
+  for pid in `ps -ef | percol | awk '{ print $2 }'`
   do
     kill $pid
   done
@@ -17,20 +17,20 @@ function peco-select-history() {
   else
     tac="tail -r"
   fi
-  BUFFER=$(\history -n 1 | eval $tac | peco --query "$LBUFFER")
+  BUFFER=$(\history -n 1 | eval $tac | percol --query "$LBUFFER")
   CURSOR=$#BUFFER
   zle clear-screen
 }
 zle -N peco-select-history
 
 function launchgrep() {
-    for launch in `find ~/ros/hydro -type f -name "*.launch" |xargs grep $1| peco`
+    for launch in `find ~/ros/hydro -type f -name "*.launch" |xargs grep $1| percol`
 }
 zle -N launchgrep
 
-# emacs open file by using peco
+# emacs open file by using percol
 function emp() {
-    for file in `ls -a |peco`
+    for file in `ls -a |percol`
     do
       em $file
     done
@@ -38,9 +38,9 @@ function emp() {
 zle -N emp
 
 
-# grep ward in file and open em by peco
+# grep ward in file and open em by percol
 function grep-open () {
-    for file in `grep -riIn $1 * .|peco | awk '{ print $1 }'| sed  's/\:\(.*\)//g'`
+    for file in `grep -riIn $1 * .|percol | awk '{ print $1 }'| sed  's/\:\(.*\)//g'`
     do
 	em  $file
     done
