@@ -11,13 +11,13 @@ function rosm () {
 zle -N rosm
 
 #rosc
-function rosc () {
-  for dir in `rospack list |awk '{ print $1 }'|peco`
-  do
-    roscd $dir
-  done
-}
-zle -N rosc
+# function rosc () {
+#   for dir in `rospack list |awk '{ print $1 }'|peco`
+#   do
+#     roscd $dir
+#   done
+# }
+# zle -N rosc
 
 #rosbp (rosbag play)
 function rosbp () {
@@ -30,7 +30,7 @@ zle -N rosbp
 
 
 #rosnode
-function rosn () {
+# function rosn () {
     #  case $1 in
     #   ping)
     #   option="ping"
@@ -52,21 +52,21 @@ function rosn () {
     #   return
     #   ;;
     # esac
- for nod in `rosnode list | peco `
- do
-  rosnode info $nod
- done
-}
-zle -N rosn
+#  for nod in `rosnode list | peco `
+#  do
+#   rosnode info $nod
+#  done
+# }
+# zle -N rosn
 
 #rostopic
-function rost() {
- for tpc in `rostopic list | peco`
- do
-     rostopic info $tpc
- done
-}
-zle -N rost
+# function rost() {
+#  for tpc in `rostopic list | peco`
+#  do
+#      rostopic info $tpc
+#  done
+# }
+# zle -N rost
 
 function eusgrep() {
     for res in `find ~/ -type f -name "*.l" |xargs grep $1| peco`
