@@ -1,9 +1,16 @@
+# -*- coding: utf-8 -*-
+
 # Run command file for percol
 
 import sys, commands
 from percol.command import SelectorCommand
 from percol.key import SPECIAL_KEYS
 from percol.finder import FinderMultiQueryMigemo, FinderMultiQueryRegex
+
+percol.view.PROMPT = u"<on_yellow><red>♥ </red></on_yellow><on_cyan><yellow> </yellow>INPUT</on_cyan><cyan> </cyan>%q"
+percol.view.RPROMPT = ur"[%i/%I]"
+
+
 
 # keymap
 percol.import_keymap({
