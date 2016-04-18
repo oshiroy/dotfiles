@@ -11,13 +11,13 @@ function rosm () {
 zle -N rosm
 
 #rosc
-# function rosc () {
-#   for dir in `rospack list |awk '{ print $1 }'|peco`
-#   do
-#     roscd $dir
-#   done
-# }
-# zle -N rosc
+function rosc () {
+  for dir in `rospack list |awk '{ print $1 }'|percol`
+  do
+    roscd $dir
+  done
+}
+zle -N rosc
 
 #rosbp (rosbag play)
 function rosbp () {
