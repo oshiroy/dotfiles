@@ -2,8 +2,9 @@
 
 sudo apt-get install -y fontforge
 
+mkdir $HOME/.fonts
 mkdir $HOME/.dotfiles/gen_fonts
-cd gen_fonts
+cd $HOME/.dotfiles/gen_fonts
 GENFONTS=$HOME/.dotfiles/gen_fonts
 
 # download nessesary files
@@ -22,13 +23,13 @@ cd $HOME/.local/share/fonts
 for f in *.*tf
 do
     mv -i "$f" "$(echo $f | sed -e 's/\s\+/_/g')"
-    cp "$(echo $f | sed -e 's/\s\+/_/g')" $HOME/.fonts
+    cp "$(echo $f | sed -e 's/\s\+/_/g')" $HOME/.fonts/
 done
 
 
 cd $GENFONTS/Ricty
 ./ricty_generator.sh $GENFONTS/Inconsolata.otf $GENFONTS/migu-1m-20130617/migu-1m-regular.ttf $GENFONTS/migu-1m-20130617/migu-1m-bold.ttf
-mv Ricty*.ttf $HOME/.fonts
+mv Ricty*.ttf $HOME/.fonts/
 fc-cache -fv
 
 cd $GENFONTS/powerline
@@ -42,6 +43,8 @@ for f in *.ttf
 do
     mv -i "$f" "$(echo $f | sed -e 's/\s\+/_/g')"
 done
+
+
 
 cp Ricty_Bold_for_Powerline.ttf ~/.fonts
 cp Ricty_Regular_for_Powerline.ttf ~/.fonts
