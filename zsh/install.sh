@@ -5,3 +5,5 @@ cd $DOTZSHDIR/plugins
 git clone git@github.com:robbyrussell/oh-my-zsh.git
 git clone git://github.com/rupa/z
 git clone git@github.com:mollifier/anyframe.git anyframe
+git clone git://github.com/zsh-users/zsh-syntax-highlighting
+

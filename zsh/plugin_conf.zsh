@@ -20,3 +20,6 @@ function peco-cdr {
 zle -N peco-cdr
 
 alias pcd='peco-cdr'
+
+# zsh-syntax-highlighting
+# source $DOTZSHDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

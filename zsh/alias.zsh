@@ -1,6 +1,6 @@
 #!usr/bin/env zsh
 #
-# alias 
+# alias
 #
 alias la='ls -a'
 alias ll='ls -l'
