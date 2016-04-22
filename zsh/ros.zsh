@@ -1,7 +1,8 @@
 #!usr/bin/env zsh
 ## ROS DISTRO
 #source $HOME/ros/groovy/setup.bash
-source $HOME/ros/hydro/devel/setup.zsh
+#source $HOME/ros/hydro/devel/setup.zsh
+source $HOME/ros/indigo/devel/setup.zsh
 
 ## Rviz for a laptop user
 export OGRE_RTT_MODE=Copy
@@ -53,28 +54,28 @@ function rossethrp2018() {
     rossetip
 }
 
-function roscd {
-    local rosvals
-    if [[ $1 = "--help" ]] | [[ $# -gt 1 ]]; then
-        echo -e "usage: roscd package\n\nJump to target package."
-        return 0
-    fi
+# function roscd {
+#     local rosvals
+#     if [[ $1 = "--help" ]] | [[ $# -gt 1 ]]; then
+#         echo -e "usage: roscd package\n\nJump to target package."
+#         return 0
+#     fi
 
-    if [ -z $1 ]; then
-      cd ~/ros/hydro/devel
-      return 0
-    fi
+#     if [ -z $1 ]; then
+#       cd ~/ros/hydro/devel
+#       return 0
+#     fi
 
-    _ros_decode_path $1 forceeval
+#     _ros_decode_path $1 forceeval
 
-    if [ $? != 0 ]; then
-      echo "roscd: No such package '$1'"
-      return 1
-    elif [ -z ${rosvals[1]} ]; then
-      cd ~ros/hydro/devel
-      return 0
-    else
-	cd ${rosvals[2]}${rosvals[3]}${rosvals[4]}
-      return 0
-    fi
-}
+#     if [ $? != 0 ]; then
+#       echo "roscd: No such package '$1'"
+#       return 1
+#     elif [ -z ${rosvals[1]} ]; then
+#       cd ~ros/hydro/devel
+#       return 0
+#     else
+# 	cd ${rosvals[2]}${rosvals[3]}${rosvals[4]}
+#       return 0
+#     fi
+# }
