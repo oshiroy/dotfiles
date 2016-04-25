@@ -7,3 +7,6 @@ ln -sf $HOME/.dotfiles/inputrc $HOME/.inputrc
 
 ln -sf $HOME/.dotfiles/peco $HOME/.peco
 ln -sf $HOME/.dotfiles/percol.d $HOME/.percol.d
+
+#ssh
+ln -sf $HOME/.dotfiles/ssh_config $HOME/.ssh/config
