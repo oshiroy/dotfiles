@@ -1,0 +1,24 @@
+Host aries
+     User oshiro
+     Hostname aries.jsk.t.u-tokyo.ac.jp
+     Compression yes
+     Port 20202
+
+Host www
+     ProxyCommand ssh -W %h:%p aries
+
+Host hrp2007v
+     User hrpuser
+     IdentityFile ~/.ssh/id_rsa
+
+Host hrp2007c
+     User grxuser
+     IdentityFile ~/.ssh/id_rsa
+
+Host hrp2017v
+     User hrpuser
+     IdentityFile ~/.ssh/id_rsa
+
+Host hrp2017c
+     User grxuser
+     IdentityFile ~/.ssh/id_rsa
