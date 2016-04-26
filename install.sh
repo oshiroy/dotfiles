@@ -8,3 +8,6 @@ ln -sf $HOME/.dotfiles/Xdefaults $HOME/.Xdefaults
 
 ln -sf $HOME/.dotfiles/peco $HOME/.peco
 ln -sf $HOME/.dotfiles/percol.d $HOME/.percol.d
+
+#ssh
+ln -sf $HOME/.dotfiles/ssh_config $HOME/.ssh/config

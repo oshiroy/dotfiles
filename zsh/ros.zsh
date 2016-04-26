@@ -56,29 +56,29 @@ function rossethrp2018() {
     rossetip
 }
 
-# function roscd {
-#     local rosvals
-#     if [[ $1 = "--help" ]] | [[ $# -gt 1 ]]; then
-#         echo -e "usage: roscd package\n\nJump to target package."
-#         return 0
-#     fi
+function roscd {
+    local rosvals
+    if [[ $1 = "--help" ]] | [[ $# -gt 1 ]]; then
+        echo -e "usage: roscd package\n\nJump to target package."
+        return 0
+    fi
 
-#     if [ -z $1 ]; then
-#       cd ~/ros/hydro/devel
-#       return 0
-#     fi
-#     _ros_decode_path $1 forceeval
-#     if [ $? != 0 ]; then
-#       echo "roscd: No such package '$1'"
-#       return 1
-#     elif [ -z ${rosvals[1]} ]; then
-#       cd ~ros/hydro/devel
-#       return 0
-#     else
-# 	cd ${rosvals[2]}${rosvals[3]}${rosvals[4]}
-#       return 0
-#     fi
-# }
+    if [ -z $1 ]; then
+      cd ~/ros/$ROS_DISTRO/devel
+      return 0
+    fi
+    _ros_decode_path $1 forceeval
+    if [ $? != 0 ]; then
+      echo "roscd: No such package '$1'"
+      return 1
+    elif [ -z ${rosvals[1]} ]; then
+      cd ~ros/hydro/devel
+      return 0
+    else
+	cd ${rosvals[2]}${rosvals[3]}${rosvals[4]}
+      return 0
+    fi
+}
 
 # overwrite update_prompt for rossetmaster
 _update_prompt() {
