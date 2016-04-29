@@ -5,6 +5,7 @@ Host aries
      Port 20202
 
 Host www
+     User oshiro
      ProxyCommand ssh -W %h:%p aries
 
 Host hrp2007v
