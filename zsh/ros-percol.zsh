@@ -2,7 +2,7 @@
 
 #rosm
 function rosm () {
- for msg in `rosmsg list | peco`
+ for msg in `rosmsg list | percol`
  do
      echo $msg
      rosmsg show $msg
@@ -21,7 +21,7 @@ zle -N rosc
 
 #rosbp (rosbag play)
 function rosbp () {
-    for bag in `find ~/rosbags -type f ! -name '*.orig.bag'|peco`
+    for bag in `find ~/rosbags -type f ! -name '*.orig.bag'|percol`
     do
 	rosbag play $bag $*
     done
@@ -69,12 +69,12 @@ zle -N rosbp
 # zle -N rost
 
 function eusgrep() {
-    for res in `find ~/ -type f -name "*.l" |xargs grep $1| peco`
+    for res in `find ~/ -type f -name "*.l" |xargs grep $1| percol`
 }
 zle -N eusgrep
 
 function eusdef() {
-    for res in `find ~/ -type f -name "*.l" |xargs grep $1 |egrep 'defun|defclass|defmethod|defmacro'| peco`
+    for res in `find ~/ -type f -name "*.l" |xargs grep $1 |egrep 'defun|defclass|defmethod|defmacro'| percol`
 }
 zle -N eusdef
 
