@@ -6,6 +6,10 @@
 #source $HOME/ros/hydro/devel/setup.zsh
 source $HOME/ros/indigo/devel/setup.zsh
 
+if [ -e $HOME/ros/private_ws ] ; then
+    source $HOME/ros/private_ws/devel/setup.zsh
+fi
+
 ## Rviz for a laptop user
 export OGRE_RTT_MODE=Copy
 
