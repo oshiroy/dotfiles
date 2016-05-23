@@ -5,13 +5,15 @@ export DOTZSHDIR=$HOME/.dotfiles/zsh
 export GOPATH=$HOME/bin/go
 export PATH=$PATH:$HOME/bin:$GOPATH/bin
 
-# use caffe
+# caffe pythonpath
 export PYTHONPATH=~/caffe/python/:$PYTHONPATH
-
-# cuda
+#
+export PYTHONPATH=~/chainer/:$PYTHONPATH
+# cuda path
 export CUDA_ROOT=/usr/local/cuda
 export PATH=$CUDA_ROOT/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
+
 
 if ! [ $EMACS ]; then
     ZSH_THEME="agnoster"
