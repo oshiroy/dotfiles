@@ -101,9 +101,6 @@
     local-name: multisense
     uri: https://bitbucket.org/crl/multisense_ros
 - git:
-    local-name: oshiroy-ros-pkg
-    uri: https://github.com/oshiroy/oshiroy-ros-pkg.git
-- git:
     local-name: pal-robotics/pal_gazebo_plugins
     uri: https://github.com/pal-robotics/pal_gazebo_plugins.git
 - git:
