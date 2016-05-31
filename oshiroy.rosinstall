@@ -79,10 +79,10 @@
     local-name: jsk-ros-pkg/jsk_visualization
     uri: https://github.com/jsk-ros-pkg/jsk_visualization.git
     version: master
-- git:
-    local-name: jsk-ros-pkg/openrave_planning
-    uri: https://github.com/jsk-ros-pkg/openrave_planning.git
-    version: master
+# - git:
+#     local-name: jsk-ros-pkg/openrave_planning
+#     uri: https://github.com/jsk-ros-pkg/openrave_planning.git
+#     version: master
 - git:
     local-name: jsk-ros-pkg/trans_system
     uri: https://oshiroy@github.com/jsk-ros-pkg/trans_system.git
