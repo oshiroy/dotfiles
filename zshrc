@@ -13,7 +13,9 @@ export PYTHONPATH=~/chainer/:$PYTHONPATH
 export CUDA_ROOT=/usr/local/cuda
 export PATH=$CUDA_ROOT/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
-
+###### OpenCV
+ # PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+ # export PKG_CONFIG_PATH
 
 if ! [ $EMACS ]; then
     ZSH_THEME="agnoster"
