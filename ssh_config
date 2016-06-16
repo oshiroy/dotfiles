@@ -23,3 +23,7 @@ Host hrp2017v
 Host hrp2017c
      User grxuser
      IdentityFile ~/.ssh/id_rsa
+
+Host him
+     User leus
+     ProxyCommand ssh -W %h:%p aries
