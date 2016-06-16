@@ -1,19 +1,4 @@
 - git:
-    local-name: RethinkRobotics/baxter
-    uri: https://github.com/RethinkRobotics/baxter.git
-- git:
-    local-name: RethinkRobotics/baxter_common
-    uri: https://github.com/RethinkRobotics/baxter_common.git
-- git:
-    local-name: RethinkRobotics/baxter_examples
-    uri: https://github.com/RethinkRobotics/baxter_examples.git
-- git:
-    local-name: RethinkRobotics/baxter_interface
-    uri: https://github.com/RethinkRobotics/baxter_interface.git
-- git:
-    local-name: RethinkRobotics/baxter_tools
-    uri: https://github.com/RethinkRobotics/baxter_tools.git
-- git:
     local-name: SharedAutonomyToolkit/shared_autonomy_manipulation
     uri: https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation.git
     version: hydro-devel
@@ -97,9 +82,6 @@
 - git:
     local-name: multimaster_experimental
     uri: https://github.com/willowgarage/multimaster_experimental.git
-- hg:
-    local-name: multisense
-    uri: https://bitbucket.org/crl/multisense_ros
 - git:
     local-name: pal-robotics/pal_gazebo_plugins
     uri: https://github.com/pal-robotics/pal_gazebo_plugins.git
@@ -146,33 +128,6 @@
 - git:
     local-name: ros_emacs_utils
     uri: https://github.com/code-iai/ros_emacs_utils.git
-- git:
-    local-name: ros_naoqi/nao_extras
-    uri: https://github.com/ros-naoqi/nao_extras.git
-- git:
-    local-name: ros_naoqi/nao_interaction
-    uri: https://github.com/ros-naoqi/nao_interaction.git
-- git:
-    local-name: ros_naoqi/nao_meshes
-    uri: https://github.com/ros-naoqi/nao_meshes.git
-- git:
-    local-name: ros_naoqi/nao_moveit_config
-    uri: https://github.com/ros-naoqi/nao_moveit_config.git
-- git:
-    local-name: ros_naoqi/nao_robot
-    uri: https://github.com/ros-naoqi/nao_robot.git
-- git:
-    local-name: ros_naoqi/nao_virtual
-    uri: https://github.com/ros-naoqi/nao_virtual.git
-- git:
-    local-name: ros_naoqi/nao_viz
-    uri: https://github.com/ros-naoqi/nao_viz.git
-- git:
-    local-name: ros_naoqi/naoqi_bridge
-    uri: https://github.com/ros-naoqi/naoqi_bridge.git
-- git:
-    local-name: ros_naoqi/naoqi_bridge_msgs
-    uri: https://github.com/ros-naoqi/naoqi_bridge_msgs.git
 - git:
     local-name: roswww
     uri: https://github.com/tork-a/roswww.git
