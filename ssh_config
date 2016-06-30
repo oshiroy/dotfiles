@@ -27,3 +27,7 @@ Host hrp2017c
 Host him
      User leus
      ProxyCommand ssh -W %h:%p aries
+
+Host callisto
+     User leus
+     ProxyCommand ssh -W %h:%p aries
