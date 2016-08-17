@@ -64,17 +64,9 @@
     local-name: jsk-ros-pkg/jsk_visualization
     uri: https://github.com/jsk-ros-pkg/jsk_visualization.git
     version: master
-# - git:
-#     local-name: jsk-ros-pkg/openrave_planning
-#     uri: https://github.com/jsk-ros-pkg/openrave_planning.git
-#     version: master
 - git:
     local-name: jsk-ros-pkg/trans_system
     uri: https://oshiroy@github.com/jsk-ros-pkg/trans_system.git
-- git:
-    local-name: kinematics_msgs
-    uri: https://github.com/PR2/kinematics_msgs.git
-    version: hydro-devel
 - git:
     local-name: mongodb_store
     uri: https://github.com/strands-project/mongodb_store.git
@@ -83,45 +75,16 @@
     local-name: multimaster_experimental
     uri: https://github.com/willowgarage/multimaster_experimental.git
 - git:
-    local-name: pal-robotics/pal_gazebo_plugins
-    uri: https://github.com/pal-robotics/pal_gazebo_plugins.git
-- git:
-    local-name: pal-robotics/pal_msgs
-    uri: https://github.com/pal-robotics/pal_msgs.git
-- git:
     local-name: pcl_conversions
     uri: https://github.com/garaemon/pcl_conversions.git
     version: hydro-devel
 - git:
-    local-name: pr2_apps
-    uri: https://github.com/PR2/pr2_apps.git
-    version: hydro-devel
-- git:
-    local-name: pr2_common_actions
-    uri: https://github.com/PR2/pr2_common_actions.git
-    version: hydro-devel
-- git:
-    local-name: pr2_kinematics
-    uri: https://github.com/PR2/pr2_kinematics.git
-    version: hydro-devel
-- git:
-    local-name: pr2_mechanism
-    uri: https://github.com/PR2/pr2_mechanism.git
-    version: hydro-devel
-- git:
-    local-name: pr2_navigation
-    uri: https://github.com/PR2/pr2_navigation.git
-    version: hydro-devel
-- git:
-    local-name: pr2_navigation_apps
-    uri: https://github.com/PR2/pr2_navigation_apps.git
-    version: master
-- git:
-    local-name: pr2_robot
-    uri: https://github.com/PR2/pr2_robot.git
-- git:
     local-name: roboticsgroup/roboticsgroup_gazebo_plugins
     uri: https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git
+- git:
+    local-name: ros-drivers/openni2_camera
+    uri: https://github.com/ros-drivers/openni2_camera.git
+    version: indigo-devel
 - git:
     local-name: ros-planning/moveit_robots
     uri: https://github.com/ros-planning/moveit_robots.git
