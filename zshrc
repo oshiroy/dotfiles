@@ -5,6 +5,9 @@ export DOTZSHDIR=$HOME/.dotfiles/zsh
 export GOPATH=$HOME/bin/go
 export PATH=$PATH:$HOME/bin:$GOPATH/bin
 
+# pip --user path
+export PATH=$HOME/.local/bin:$PATH
+
 # caffe pythonpath
 export PYTHONPATH=~/caffe/python/:$PYTHONPATH
 #
