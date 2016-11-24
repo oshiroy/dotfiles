@@ -1,14 +1,25 @@
 #!usr/bin/env zsh
 # -*- coding:utf-8 -*-
 
-## ROS DISTRO
-#source $HOME/ros/groovy/setup.bash
-#source $HOME/ros/hydro/devel/setup.zsh
-source $HOME/ros/indigo/devel/setup.zsh
-
 if [ -e $HOME/ros/private_ws ] ; then
     source $HOME/ros/private_ws/devel/setup.zsh
 fi
+
+if [ -e  $HOME/ros/unreleased/devel ] ; then
+    source $HOME/ros/unreleased/devel/setup.zsh
+fi
+if [ -e  $HOME/ros/indigo_parent/devel ] ; then
+    source $HOME/ros/indigo_parent/devel/setup.zsh
+fi
+
+## ROS DISTRO
+#source $HOME/ros/groovy/setup.bash
+#source $HOME/ros/hydro/devel/setup.zsh
+
+if [ -e  $HOME/ros/indigo/devel ] ; then
+    source $HOME/ros/indigo/devel/setup.zsh
+fi
+
 
 ## Rviz for a laptop user
 export OGRE_RTT_MODE=Copy
@@ -16,10 +27,6 @@ export OGRE_RTT_MODE=Copy
 #euslib
 export CVSDIR=~/prog
 export OPENHRPHOME=$CVSDIR/OpenHRP
-
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 ## rlwrap roseus alias
 if ! [ $EMACS ]; then
