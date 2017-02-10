@@ -8,9 +8,9 @@ fi
 if [ -e  $HOME/ros/unreleased/devel ] ; then
     source $HOME/ros/unreleased/devel/setup.zsh
 fi
-if [ -e  $HOME/ros/indigo_parent/devel ] ; then
-    source $HOME/ros/indigo_parent/devel/setup.zsh
-fi
+# if [ -e  $HOME/ros/indigo_parent/devel ] ; then
+#     source $HOME/ros/indigo_parent/devel/setup.zsh
+# fi
 
 ## ROS DISTRO
 #source $HOME/ros/groovy/setup.bash
