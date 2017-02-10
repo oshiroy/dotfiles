@@ -2,20 +2,28 @@
 # Path
 export ZSH=$HOME/.dotfiles/zsh/plugins/oh-my-zsh
 export DOTZSHDIR=$HOME/.dotfiles/zsh
-export GOPATH=$HOME/bin/go
+export GOPATH=$HOME/.local/bin/go
 export PATH=$PATH:$HOME/bin:$GOPATH/bin
 
 # pip --user path
 export PATH=$HOME/.local/bin:$PATH
 
 # caffe pythonpath
-export PYTHONPATH=~/caffe/python/:$PYTHONPATH
+if [ -e $HOME/caffe ] ; then
+    export PYTHONPATH=$HOME/caffe/python/:$PYTHONPATH
+fi
+
 #
-export PYTHONPATH=~/chainer/:$PYTHONPATH
+# export PYTHONPATH=~/chainer/:$PYTHONPATH
+
 # cuda path
-export CUDA_ROOT=/usr/local/cuda
-export PATH=$CUDA_ROOT/bin:$PATH
-export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
+if [ -e /usr/local/cuda ] ; then
+    export CUDA_ROOT=/usr/local/cuda
+    export CUDA_PATH=$CUDA_ROOT
+    export PATH=$CUDA_ROOT/bin:$PATH
+    export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
+fi
+
 ###### OpenCV
  # PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
  # export PKG_CONFIG_PATH
@@ -77,6 +85,9 @@ export SVN_SSH="ssh -l ${SSH_USER}"
 ## bind key
 bindkey '^r' peco-select-history
 bindkey '^[r' percol-select-topic
+
+# for pycd activation
+source `which pycd.sh`
 
 # for checking zsh speed
 # if (which zprof > /dev/null) ;then
