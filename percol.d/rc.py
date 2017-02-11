@@ -7,7 +7,7 @@ from percol.command import SelectorCommand
 from percol.key import SPECIAL_KEYS
 from percol.finder import FinderMultiQueryMigemo, FinderMultiQueryRegex
 
-percol.view.PROMPT = u"<on_yellow><red>♥ </red></on_yellow><on_cyan><yellow> </yellow>INPUT</on_cyan><cyan> </cyan>%q"
+percol.view.PROMPT = u"<on_yellow><red>♥ </red></on_yellow><on_cyan><yellow> </yellow><white>INPUT</white></on_cyan><cyan> </cyan>%q"
 percol.view.RPROMPT = ur"[%i/%I]"
 
 
