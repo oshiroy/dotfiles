@@ -4,3 +4,9 @@
 [submodule "submodules/gnome-terminal-colors-solarized"]
 	path = submodules/gnome-terminal-colors-solarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+[submodule "submodules/fonts"]
+	path = submodules/fonts
+	url = https://github.com/powerline/fonts.git
+[submodule "submodules/osx-terminal.app-colors-solarized"]
+	path = submodules/osx-terminal.app-colors-solarized
+	url = https://github.com/tomislav/osx-terminal.app-colors-solarized.git
