@@ -24,6 +24,13 @@ if [ -e /usr/local/cuda ] ; then
     export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
 fi
 
+# pyenv
+if [ -e $HOME/.pyenv ] ; then
+    export PYENV_ROOT=$HOME/.pyenv
+    export PATH=$PYENV_ROOT/bin:$PATH
+    eval "$(pyenv init -)"
+fi
+
 ###### OpenCV
  # PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
  # export PKG_CONFIG_PATH
@@ -87,7 +94,7 @@ bindkey '^r' peco-select-history
 bindkey '^[r' percol-select-topic
 
 # for pycd activation
-source `which pycd.sh`
+# source `which pycd.sh`
 
 # for checking zsh speed
 # if (which zprof > /dev/null) ;then
