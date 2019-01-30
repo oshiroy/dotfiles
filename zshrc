@@ -3,7 +3,8 @@
 export ZSH=$HOME/.dotfiles/zsh/plugins/oh-my-zsh
 export DOTZSHDIR=$HOME/.dotfiles/zsh
 export GOPATH=$HOME/.local/bin/go
-export PATH=$PATH:$HOME/bin:$GOPATH/bin
+
+export PATH=$HOME/bin:$GOPATH/bin:/usr/local/bin:$PATH
 
 # pip --user path
 export PATH=$HOME/.local/bin:$PATH
@@ -23,7 +24,6 @@ if [ -e /usr/local/cuda ] ; then
     export PATH=$CUDA_ROOT/bin:$PATH
     export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
 fi
-
 
 ###### OpenCV
  # PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
@@ -63,7 +63,6 @@ fi
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # oh-my-zsh plugins

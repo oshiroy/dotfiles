@@ -6,4 +6,8 @@ peco
 
 
 
-
+## Requirement
+- zsh
+- tmux
+- percol
+- pyenv
