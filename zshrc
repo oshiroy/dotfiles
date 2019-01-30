@@ -1,6 +1,6 @@
 #!usr/bin/env zsh
 # Path
-export ZSH=$HOME/.dotfiles/zsh/plugins/oh-my-zsh
+export ZSH=$HOME/.dotfiles/submodules/oh-my-zsh
 export DOTZSHDIR=$HOME/.dotfiles/zsh
 export GOPATH=$HOME/.local/bin/go
 
@@ -70,7 +70,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-for plugin ($DOTZSHDIR/plugins/*) source $plugin
+for plugin ($HOME/.dotfiles/submodules/zsh/*) source $plugin
 for config_file ($DOTZSHDIR/*.zsh) source $config_file
 
 # Compilation flags
