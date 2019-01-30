@@ -24,12 +24,6 @@ if [ -e /usr/local/cuda ] ; then
     export LD_LIBRARY_PATH=$CUDA_ROOT/lib64:$LD_LIBRARY_PATH
 fi
 
-# pyenv
-if [ -e $HOME/.pyenv ] ; then
-    export PYENV_ROOT=$HOME/.pyenv
-    export PATH=$PYENV_ROOT/bin:$PATH
-    eval "$(pyenv init -)"
-fi
 
 ###### OpenCV
  # PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
@@ -101,3 +95,11 @@ bindkey '^[r' percol-select-topic
 #     zprof | less
 # fi
 
+# vncserver :1
+
+# pyenv
+if [ -e $HOME/.pyenv ] ; then
+    export PYENV_ROOT=$HOME/.pyenv
+    export PATH=$PYENV_ROOT/bin:$PATH
+    eval "$(pyenv init -)"
+fi

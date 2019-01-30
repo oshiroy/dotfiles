@@ -14,4 +14,4 @@ ln -sf $HOME/.dotfiles/percol.d $HOME/.percol.d
 ln -sf $HOME/.dotfiles/ssh_config $HOME/.ssh/config
 
 #.rosinstall
-cp $HOME/.dotfiles/oshiroy.rosinstall $HOME/ros/indigo/src/.rosinstall
+# cp $HOME/.dotfiles/oshiroy.rosinstall $HOME/ros/indigo/src/.rosinstall
