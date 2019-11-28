@@ -10,3 +10,15 @@
 [submodule "submodules/osx-terminal.app-colors-solarized"]
 	path = submodules/osx-terminal.app-colors-solarized
 	url = https://github.com/tomislav/osx-terminal.app-colors-solarized.git
+[submodule "submodules/oh-my-zsh"]
+	path = submodules/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "submodules/zsh/zsh-syntax-highlighting"]
+	path = submodules/zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "submodules/zsh/anyframe"]
+	path = submodules/zsh/anyframe
+	url = https://github.com/mollifier/anyframe.git
+[submodule "submodules/zsh/z"]
+	path = submodules/zsh/z
+	url = https://github.com/rupa/z

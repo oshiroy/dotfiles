@@ -2,7 +2,7 @@
 
 # kill function
 function pekill () {
-  for pid in `ps -ef | percol | awk '{ print $2 }'`
+  for pid in `ps -ef | peco | awk '{ print $2 }'`
   do
     kill $pid
   done
@@ -17,7 +17,7 @@ function peco-select-history() {
   else
     tac="tail -r"
   fi
-  BUFFER=$(\history -n 1 | eval $tac | percol --query "$LBUFFER")
+  BUFFER=$(\history -n 1 | eval $tac | peco --query "$LBUFFER")
   CURSOR=$#BUFFER
   zle clear-screen
 }
