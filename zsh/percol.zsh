@@ -46,3 +46,18 @@ function grep-open () {
     done
 }
 zle -N grep-open
+
+
+function gcloud-set-project() {
+  project=`gcloud projects list | peco |awk '{print$1}'`
+  echo "gcloud config set project ${project}"
+  gcloud config set project ${project}
+}
+zle -N gcloud-set-project
+
+function gcloud-set-account(){
+    account=`gcloud auth list | sed 1,2d |sed  -e "s/*//g" |sed -e "s/\ //g" |awk "{print$1}" | peco`
+    echo "gcloud config set account ${account}"
+    gcloud config set account ${account}
+}
+zle -N gcloud-set-account
